@@ -1,0 +1,1116 @@
+Archive member included to satisfy reference by file (symbol)
+
+C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+                              ./src/DHT22.o (SystemCoreClock)
+C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                              C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o) (Chip_Clock_EnablePLL)
+C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+                              ./src/DHT22.o (Chip_IOCON_PinMuxSet)
+C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                              ./src/DHT22.o (Chip_SetupXtalClocking)
+c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_c.a(__weak__main.o)
+                              ./src/cr_startup_lpc175x_6x.o (__main)
+
+Allocating common symbols
+Common symbol       size              file
+
+SystemCoreClock     0x4               C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+
+Discarded input sections
+
+ .group         0x00000000        0xc ./src/DHT22.o
+ .group         0x00000000        0xc ./src/DHT22.o
+ .group         0x00000000        0xc ./src/DHT22.o
+ .group         0x00000000        0xc ./src/DHT22.o
+ .group         0x00000000        0xc ./src/DHT22.o
+ .group         0x00000000        0xc ./src/DHT22.o
+ .group         0x00000000        0xc ./src/DHT22.o
+ .group         0x00000000        0xc ./src/DHT22.o
+ .group         0x00000000        0xc ./src/DHT22.o
+ .group         0x00000000        0xc ./src/DHT22.o
+ .group         0x00000000        0xc ./src/DHT22.o
+ .group         0x00000000        0xc ./src/DHT22.o
+ .group         0x00000000        0xc ./src/DHT22.o
+ .group         0x00000000        0xc ./src/DHT22.o
+ .group         0x00000000        0xc ./src/DHT22.o
+ .group         0x00000000        0xc ./src/DHT22.o
+ .group         0x00000000        0xc ./src/DHT22.o
+ .group         0x00000000        0xc ./src/DHT22.o
+ .group         0x00000000        0xc ./src/DHT22.o
+ .group         0x00000000        0xc ./src/DHT22.o
+ .group         0x00000000        0xc ./src/DHT22.o
+ .group         0x00000000        0xc ./src/DHT22.o
+ .group         0x00000000        0xc ./src/DHT22.o
+ .group         0x00000000        0xc ./src/DHT22.o
+ .group         0x00000000        0xc ./src/DHT22.o
+ .group         0x00000000        0xc ./src/DHT22.o
+ .group         0x00000000        0xc ./src/DHT22.o
+ .group         0x00000000        0xc ./src/DHT22.o
+ .group         0x00000000        0xc ./src/DHT22.o
+ .group         0x00000000        0xc ./src/DHT22.o
+ .group         0x00000000        0xc ./src/DHT22.o
+ .group         0x00000000        0xc ./src/DHT22.o
+ .group         0x00000000        0xc ./src/DHT22.o
+ .group         0x00000000        0xc ./src/DHT22.o
+ .group         0x00000000        0xc ./src/DHT22.o
+ .text          0x00000000        0x0 ./src/DHT22.o
+ .data          0x00000000        0x0 ./src/DHT22.o
+ .bss           0x00000000        0x0 ./src/DHT22.o
+ .text.DemoramS
+                0x00000000       0x50 ./src/DHT22.o
+ .group         0x00000000        0xc ./src/cr_startup_lpc175x_6x.o
+ .text          0x00000000        0x0 ./src/cr_startup_lpc175x_6x.o
+ .data          0x00000000        0x0 ./src/cr_startup_lpc175x_6x.o
+ .bss           0x00000000        0x0 ./src/cr_startup_lpc175x_6x.o
+ .debug_macro   0x00000000      0xaa8 ./src/cr_startup_lpc175x_6x.o
+ .group         0x00000000        0xc ./src/crp.o
+ .group         0x00000000        0xc ./src/crp.o
+ .text          0x00000000        0x0 ./src/crp.o
+ .data          0x00000000        0x0 ./src/crp.o
+ .bss           0x00000000        0x0 ./src/crp.o
+ .crp           0x00000000        0x4 ./src/crp.o
+ .debug_info    0x00000000       0x40 ./src/crp.o
+ .debug_abbrev  0x00000000       0x38 ./src/crp.o
+ .debug_aranges
+                0x00000000       0x18 ./src/crp.o
+ .debug_macro   0x00000000       0x1a ./src/crp.o
+ .debug_macro   0x00000000      0xaa8 ./src/crp.o
+ .debug_macro   0x00000000       0x34 ./src/crp.o
+ .debug_line    0x00000000       0xb1 ./src/crp.o
+ .debug_str     0x00000000     0x2e8a ./src/crp.o
+ .comment       0x00000000       0x76 ./src/crp.o
+ .ARM.attributes
+                0x00000000       0x33 ./src/crp.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .group         0x00000000        0xc ./src/sysinit.o
+ .text          0x00000000        0x0 ./src/sysinit.o
+ .data          0x00000000        0x0 ./src/sysinit.o
+ .bss           0x00000000        0x0 ./src/sysinit.o
+ .debug_macro   0x00000000      0xaa8 ./src/sysinit.o
+ .debug_macro   0x00000000       0x10 ./src/sysinit.o
+ .debug_macro   0x00000000      0x12e ./src/sysinit.o
+ .debug_macro   0x00000000      0x5b3 ./src/sysinit.o
+ .debug_macro   0x00000000       0x22 ./src/sysinit.o
+ .debug_macro   0x00000000       0x7b ./src/sysinit.o
+ .debug_macro   0x00000000       0x10 ./src/sysinit.o
+ .debug_macro   0x00000000       0x2d ./src/sysinit.o
+ .debug_macro   0x00000000       0x3a ./src/sysinit.o
+ .debug_macro   0x00000000       0x2d ./src/sysinit.o
+ .debug_macro   0x00000000      0xbb1 ./src/sysinit.o
+ .debug_macro   0x00000000      0x22c ./src/sysinit.o
+ .debug_macro   0x00000000       0x42 ./src/sysinit.o
+ .debug_macro   0x00000000       0x52 ./src/sysinit.o
+ .debug_macro   0x00000000       0x78 ./src/sysinit.o
+ .debug_macro   0x00000000       0x82 ./src/sysinit.o
+ .debug_macro   0x00000000      0x48c ./src/sysinit.o
+ .debug_macro   0x00000000       0x34 ./src/sysinit.o
+ .debug_macro   0x00000000      0x4c5 ./src/sysinit.o
+ .debug_macro   0x00000000      0x1b7 ./src/sysinit.o
+ .debug_macro   0x00000000       0x10 ./src/sysinit.o
+ .debug_macro   0x00000000      0x21b ./src/sysinit.o
+ .debug_macro   0x00000000      0x1b9 ./src/sysinit.o
+ .debug_macro   0x00000000       0x40 ./src/sysinit.o
+ .debug_macro   0x00000000       0x22 ./src/sysinit.o
+ .debug_macro   0x00000000      0x162 ./src/sysinit.o
+ .debug_macro   0x00000000       0x94 ./src/sysinit.o
+ .debug_macro   0x00000000       0xb8 ./src/sysinit.o
+ .debug_macro   0x00000000       0x4c ./src/sysinit.o
+ .debug_macro   0x00000000       0x16 ./src/sysinit.o
+ .debug_macro   0x00000000      0x328 ./src/sysinit.o
+ .debug_macro   0x00000000       0x49 ./src/sysinit.o
+ .debug_macro   0x00000000       0x16 ./src/sysinit.o
+ .debug_macro   0x00000000       0xca ./src/sysinit.o
+ .debug_macro   0x00000000       0x18 ./src/sysinit.o
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .text          0x00000000        0x0 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .data          0x00000000        0x0 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .bss           0x00000000        0x0 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .text.Chip_Clock_IsUSBPLLLocked
+                0x00000000       0x24 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .text.Chip_Clock_IsUSBPLLConnected
+                0x00000000       0x24 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .text.Chip_USB_Init
+                0x00000000       0x4c C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x00000000       0x10 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x00000000      0x12e C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x00000000      0x5b3 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x00000000       0x22 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x00000000       0x7b C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x00000000       0x10 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x00000000       0x2d C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x00000000       0x3a C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x00000000       0x2d C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x00000000      0xbb1 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x00000000      0x22c C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x00000000       0x42 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x00000000       0x52 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x00000000       0x78 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x00000000       0x82 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x00000000      0x48c C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x00000000       0x34 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x00000000      0x4c5 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x00000000      0x1b7 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x00000000       0x10 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x00000000      0x21b C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x00000000      0x1b9 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x00000000       0x40 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x00000000       0x22 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x00000000      0x162 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x00000000       0x94 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x00000000       0xb8 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x00000000       0x4c C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x00000000       0x16 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x00000000      0x328 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x00000000       0x49 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x00000000       0x16 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x00000000       0xca C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x00000000       0x18 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text          0x00000000        0x0 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .data          0x00000000        0x0 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .bss           0x00000000        0x0 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_IsUSBPLLEnabled
+                0x00000000       0x24 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_IsUSBPLLConnected
+                0x00000000       0x24 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetUSBPLLInClockRate
+                0x00000000        0xe C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_DisablePeriphClock
+                0x00000000       0x38 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_IsPeripheralClockEnabled
+                0x00000000       0x3c C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_SetCPUClockSource
+                0x00000000       0x2a C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_SetUSBClockDiv
+                0x00000000       0x30 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetUSBClockDiv
+                0x00000000       0x1c C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_SetPCLKDiv
+                0x00000000       0x64 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetPCLKDiv
+                0x00000000       0x8c C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_SetCLKOUTSource
+                0x00000000       0x44 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetUSBPLLOutClockRate
+                0x00000000       0x40 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetUSBClockRate
+                0x00000000       0x38 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetPeripheralClockRate
+                0x00000000       0x26 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000      0xa9c C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x10 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000      0x12e C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000      0x5b3 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x22 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x7b C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x10 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x2d C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x3a C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x2d C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000      0xbb1 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000      0x22c C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x42 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x52 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x78 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x82 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000      0x48c C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x34 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000      0x4c5 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000      0x1b7 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x10 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000      0x21b C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000      0x1b9 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x40 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x22 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000      0x162 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x94 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0xb8 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x4c C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x16 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000      0x328 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x49 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x16 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0xca C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x18 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .text          0x00000000        0x0 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .data          0x00000000        0x0 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .bss           0x00000000        0x0 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .text.Chip_IOCON_SetPinMuxing
+                0x00000000       0x62 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000      0xa9c C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x10 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000      0x12e C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000      0x5b3 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x22 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x7b C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x10 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x2d C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x3a C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x2d C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000      0xbb1 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000      0x22c C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x42 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x52 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x78 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x82 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000      0x48c C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x34 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000      0x4c5 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000      0x1b7 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x10 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000      0x21b C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000      0x1b9 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x40 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x22 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000      0x162 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x94 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0xb8 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x4c C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x16 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000      0x328 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x49 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x16 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0xca C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x18 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .text          0x00000000        0x0 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .data          0x00000000        0x0 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .bss           0x00000000        0x0 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000      0xa9c C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x10 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000      0x12e C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000      0x5b3 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x22 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x7b C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x10 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x2d C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x3a C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x2d C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000      0xbb1 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000      0x22c C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x42 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x52 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x78 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x82 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000      0x48c C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x34 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000      0x4c5 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000      0x1b7 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x10 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000      0x21b C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000      0x1b9 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x40 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x22 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000      0x162 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x94 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0xb8 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x4c C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x16 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000      0x328 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x49 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x16 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0xca C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x18 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_c.a(__weak__main.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_c.a(__weak__main.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_c.a(__weak__main.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+MFlash512        0x00000000         0x00080000         xr
+RamLoc32         0x10000000         0x00008000         xrw
+RamAHB32         0x2007c000         0x00008000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./src/DHT22.o
+LOAD ./src/cr_startup_lpc175x_6x.o
+LOAD ./src/crp.o
+LOAD ./src/sysinit.o
+LOAD C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a
+START GROUP
+LOAD c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_c.a
+LOAD c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp\libcr_eabihelpers.a
+LOAD c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp\libgcc.a
+END GROUP
+                0x00000000                __base_MFlash512 = 0x0
+                0x00000000                __base_Flash = 0x0
+                0x00080000                __top_MFlash512 = 0x80000
+                0x00080000                __top_Flash = 0x80000
+                0x10000000                __base_RamLoc32 = 0x10000000
+                0x10000000                __base_RAM = 0x10000000
+                0x10008000                __top_RamLoc32 = 0x10008000
+                0x10008000                __top_RAM = 0x10008000
+                0x2007c000                __base_RamAHB32 = 0x2007c000
+                0x2007c000                __base_RAM2 = 0x2007c000
+                0x20084000                __top_RamAHB32 = 0x20084000
+                0x20084000                __top_RAM2 = 0x20084000
+
+.text           0x00000000      0xd8c
+ FILL mask 0xff
+                0x00000000                __vectors_start__ = ABSOLUTE (.)
+ *(.isr_vector)
+ .isr_vector    0x00000000       0xcc ./src/cr_startup_lpc175x_6x.o
+                0x00000000                g_pfnVectors
+                0x000000cc                . = ALIGN (0x4)
+                0x000000cc                __section_table_start = .
+                0x000000cc                __data_section_table = .
+                0x000000cc        0x4 LONG 0xd8c LOADADDR (.data)
+                0x000000d0        0x4 LONG 0x10000000 ADDR (.data)
+                0x000000d4        0x4 LONG 0x4 SIZEOF (.data)
+                0x000000d8        0x4 LONG 0xd8c LOADADDR (.data_RAM2)
+                0x000000dc        0x4 LONG 0x2007c000 ADDR (.data_RAM2)
+                0x000000e0        0x4 LONG 0x0 SIZEOF (.data_RAM2)
+                0x000000e4                __data_section_table_end = .
+                0x000000e4                __bss_section_table = .
+                0x000000e4        0x4 LONG 0x10000004 ADDR (.bss)
+                0x000000e8        0x4 LONG 0x8 SIZEOF (.bss)
+                0x000000ec        0x4 LONG 0x2007c000 ADDR (.bss_RAM2)
+                0x000000f0        0x4 LONG 0x0 SIZEOF (.bss_RAM2)
+                0x000000f4                __bss_section_table_end = .
+                0x000000f4                __section_table_end = .
+ *(.after_vectors*)
+ .after_vectors
+                0x000000f4      0x12c ./src/cr_startup_lpc175x_6x.o
+                0x000000f4                data_init
+                0x00000136                bss_init
+                0x0000016c                ResetISR
+                0x000001e4                NMI_Handler
+                0x000001ea                HardFault_Handler
+                0x000001f0                MemManage_Handler
+                0x000001f6                BusFault_Handler
+                0x000001fc                UsageFault_Handler
+                0x00000202                SVC_Handler
+                0x00000208                DebugMon_Handler
+                0x0000020e                PendSV_Handler
+                0x0000021a                UART1_IRQHandler
+                0x0000021a                EINT3_IRQHandler
+                0x0000021a                CANActivity_IRQHandler
+                0x0000021a                TIMER3_IRQHandler
+                0x0000021a                UART0_IRQHandler
+                0x0000021a                USBActivity_IRQHandler
+                0x0000021a                EINT2_IRQHandler
+                0x0000021a                IntDefaultHandler
+                0x0000021a                PLL0_IRQHandler
+                0x0000021a                CAN_IRQHandler
+                0x0000021a                I2C0_IRQHandler
+                0x0000021a                SSP0_IRQHandler
+                0x0000021a                I2C1_IRQHandler
+                0x0000021a                I2C2_IRQHandler
+                0x0000021a                RTC_IRQHandler
+                0x0000021a                TIMER0_IRQHandler
+                0x0000021a                SPI_IRQHandler
+                0x0000021a                RIT_IRQHandler
+                0x0000021a                EINT1_IRQHandler
+                0x0000021a                TIMER1_IRQHandler
+                0x0000021a                UART2_IRQHandler
+                0x0000021a                ADC_IRQHandler
+                0x0000021a                SSP1_IRQHandler
+                0x0000021a                USB_IRQHandler
+                0x0000021a                BOD_IRQHandler
+                0x0000021a                PWM1_IRQHandler
+                0x0000021a                WDT_IRQHandler
+                0x0000021a                I2S_IRQHandler
+                0x0000021a                QEI_IRQHandler
+                0x0000021a                EINT0_IRQHandler
+                0x0000021a                ETH_IRQHandler
+                0x0000021a                PLL1_IRQHandler
+                0x0000021a                DMA_IRQHandler
+                0x0000021a                TIMER2_IRQHandler
+                0x0000021a                UART3_IRQHandler
+                0x0000021a                MCPWM_IRQHandler
+ *(.text*)
+ .text.NVIC_SetPriority
+                0x00000220       0x54 ./src/DHT22.o
+ .text.SysTick_Config
+                0x00000274       0x44 ./src/DHT22.o
+ .text.Chip_SYSCTL_SetFLASHAccess
+                0x000002b8       0x30 ./src/DHT22.o
+ .text.Chip_IOCON_Init
+                0x000002e8       0x16 ./src/DHT22.o
+ .text.Chip_GPIO_Init
+                0x000002fe       0x16 ./src/DHT22.o
+ .text.Chip_GPIO_SetPinState
+                0x00000314       0x64 ./src/DHT22.o
+ .text.Chip_GPIO_GetPinState
+                0x00000378       0x38 ./src/DHT22.o
+ .text.Chip_GPIO_ReadPortBit
+                0x000003b0       0x26 ./src/DHT22.o
+ .text.Chip_GPIO_SetPinDIROutput
+                0x000003d6       0x36 ./src/DHT22.o
+ .text.Chip_GPIO_SetPinDIRInput
+                0x0000040c       0x3a ./src/DHT22.o
+ .text.Chip_GPIO_SetPinOutHigh
+                0x00000446       0x2e ./src/DHT22.o
+ .text.Chip_GPIO_SetPinOutLow
+                0x00000474       0x2e ./src/DHT22.o
+ .text.Chip_GPIO_SetPinToggle
+                0x000004a2       0x4c ./src/DHT22.o
+ *fill*         0x000004ee        0x2 ff
+ .text.DemorauS
+                0x000004f0       0x4c ./src/DHT22.o
+                0x000004f0                DemorauS
+ .text.esperaUno
+                0x0000053c       0x38 ./src/DHT22.o
+                0x0000053c                esperaUno
+ .text.esperaCero
+                0x00000574       0x3c ./src/DHT22.o
+                0x00000574                esperaCero
+ .text.TareaSensor
+                0x000005b0      0x13c ./src/DHT22.o
+                0x000005b0                TareaSensor
+ .text.main     0x000006ec       0x7c ./src/DHT22.o
+                0x000006ec                main
+ .text.SysTick_Handler
+                0x00000768        0xc ./src/DHT22.o
+                0x00000768                SysTick_Handler
+ .text.SystemInit
+                0x00000774       0x24 ./src/sysinit.o
+                0x00000774                SystemInit
+ .text.SystemCoreClockUpdate
+                0x00000798       0x18 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+                0x00000798                SystemCoreClockUpdate
+ .text.Chip_Clock_IsMainPLLEnabled
+                0x000007b0       0x24 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_IsMainPLLConnected
+                0x000007d4       0x24 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_FeedPLL
+                0x000007f8       0x34 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetMainPLLSource
+                0x0000082c       0x20 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetMainOscRate
+                0x0000084c       0x14 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetIntOscRate
+                0x00000860       0x14 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetRTCOscRate
+                0x00000874       0x14 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetMainPLLInClockRate
+                0x00000888        0xe C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ *fill*         0x00000896        0x2 ff
+ .text.Chip_Clock_EnablePLL
+                0x00000898       0x44 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000898                Chip_Clock_EnablePLL
+ .text.Chip_Clock_DisablePLL
+                0x000008dc       0x48 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x000008dc                Chip_Clock_DisablePLL
+ .text.Chip_Clock_SetupPLL
+                0x00000924       0x5c C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000924                Chip_Clock_SetupPLL
+ .text.Chip_Clock_EnablePeriphClock
+                0x00000980       0x34 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000980                Chip_Clock_EnablePeriphClock
+ .text.Chip_Clock_GetCPUClockSource
+                0x000009b4       0x24 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x000009b4                Chip_Clock_GetCPUClockSource
+ .text.Chip_Clock_SetCPUClockDiv
+                0x000009d8       0x20 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x000009d8                Chip_Clock_SetCPUClockDiv
+ .text.Chip_Clock_GetCPUClockDiv
+                0x000009f8       0x1c C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x000009f8                Chip_Clock_GetCPUClockDiv
+ .text.Chip_Clock_GetSYSCLKRate
+                0x00000a14       0x34 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000a14                Chip_Clock_GetSYSCLKRate
+ .text.Chip_Clock_GetMainPLLOutClockRate
+                0x00000a48       0x54 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000a48                Chip_Clock_GetMainPLLOutClockRate
+ .text.Chip_Clock_GetMainClockRate
+                0x00000a9c       0x28 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000a9c                Chip_Clock_GetMainClockRate
+ .text.Chip_Clock_GetSystemClockRate
+                0x00000ac4       0x18 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000ac4                Chip_Clock_GetSystemClockRate
+ .text.Chip_IOCON_PinMuxSet
+                0x00000adc       0x36 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+                0x00000adc                Chip_IOCON_PinMuxSet
+ .text.Chip_IOCON_PinMux
+                0x00000b12       0x94 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+                0x00000b12                Chip_IOCON_PinMux
+ *fill*         0x00000ba6        0x2 ff
+ .text.Chip_Clock_IsMainPLLEnabled
+                0x00000ba8       0x24 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .text.Chip_Clock_IsMainPLLLocked
+                0x00000bcc       0x24 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .text.Chip_Clock_IsMainPLLConnected
+                0x00000bf0       0x24 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .text.Chip_Clock_EnableCrystal
+                0x00000c14       0x20 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .text.Chip_Clock_IsCrystalEnabled
+                0x00000c34       0x24 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .text.Chip_Clock_SetMainPLLSource
+                0x00000c58       0x20 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .text.Chip_SetupIrcClocking
+                0x00000c78       0x6a C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x00000c78                Chip_SetupIrcClocking
+ .text.Chip_SetupXtalClocking
+                0x00000ce2       0x90 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x00000ce2                Chip_SetupXtalClocking
+ .text.Chip_SystemInit
+                0x00000d72        0xc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x00000d72                Chip_SystemInit
+ .text.__weak_main
+                0x00000d7e        0x4 c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_c.a(__weak__main.o)
+                0x00000d7e                __weak_main
+                0x00000d7e                __main
+ *(.rodata .rodata.* .constdata .constdata.*)
+ *fill*         0x00000d82        0x2 ff
+ .rodata.OscRateIn
+                0x00000d84        0x4 ./src/sysinit.o
+                0x00000d84                OscRateIn
+ .rodata.RTCOscRateIn
+                0x00000d88        0x4 ./src/sysinit.o
+                0x00000d88                RTCOscRateIn
+                0x00000d8c                . = ALIGN (0x4)
+
+.glue_7         0x00000d8c        0x0
+ .glue_7        0x00000d8c        0x0 linker stubs
+
+.glue_7t        0x00000d8c        0x0
+ .glue_7t       0x00000d8c        0x0 linker stubs
+
+.vfp11_veneer   0x00000d8c        0x0
+ .vfp11_veneer  0x00000d8c        0x0 linker stubs
+
+.v4_bx          0x00000d8c        0x0
+ .v4_bx         0x00000d8c        0x0 linker stubs
+
+.iplt           0x00000d8c        0x0
+ .iplt          0x00000d8c        0x0 ./src/DHT22.o
+
+.rel.dyn        0x00000d8c        0x0
+ .rel.iplt      0x00000d8c        0x0 ./src/DHT22.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x00000d8c                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x00000d8c                __exidx_end = .
+                0x00000d8c                _etext = .
+
+.data_RAM2      0x2007c000        0x0 load address 0x00000d8c
+ FILL mask 0xff
+                [!provide]                PROVIDE (__start_data_RAM2 = .)
+ *(.ramfunc.$RAM2)
+ *(.ramfunc.$RamAHB32)
+ *(.data.$RAM2)
+ *(.data.$RamAHB32)
+ *(.data.$RAM2.*)
+ *(.data.$RamAHB32.*)
+                0x2007c000                . = ALIGN (0x4)
+                [!provide]                PROVIDE (__end_data_RAM2 = .)
+
+.uninit_RESERVED
+                0x10000000        0x0
+                0x10000000                . = ALIGN (0x4)
+ *(.bss.$RESERVED*)
+                0x10000000                . = ALIGN (0x4)
+                0x10000000                _end_uninit_RESERVED = .
+
+.data           0x10000000        0x4 load address 0x00000d8c
+ FILL mask 0xff
+                0x10000000                _data = .
+ *(vtable)
+ *(.ramfunc*)
+ *(CodeQuickAccess)
+ *(DataQuickAccess)
+ *(RamFunction)
+ *(.data*)
+ .data.espera.7109
+                0x10000000        0x4 ./src/DHT22.o
+                0x10000004                . = ALIGN (0x4)
+                0x10000004                _edata = .
+
+.igot.plt       0x10000004        0x0 load address 0x00000d90
+ .igot.plt      0x10000004        0x0 ./src/DHT22.o
+
+.bss_RAM2       0x2007c000        0x0
+                0x2007c000                . = ALIGN (0x4)
+                [!provide]                PROVIDE (__start_bss_RAM2 = .)
+ *(.bss.$RAM2)
+ *(.bss.$RamAHB32)
+ *(.bss.$RAM2.*)
+ *(.bss.$RamAHB32.*)
+                0x2007c000                . = ALIGN ((. != 0x0)?0x4:0x1)
+                [!provide]                PROVIDE (__end_bss_RAM2 = .)
+
+.bss            0x10000004        0x8
+                0x10000004                . = ALIGN (0x4)
+                0x10000004                _bss = .
+ *(.bss*)
+ .bss.estado.7110
+                0x10000004        0x4 ./src/DHT22.o
+ *(COMMON)
+ COMMON         0x10000008        0x4 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+                0x10000008                SystemCoreClock
+                0x1000000c                . = ALIGN (0x4)
+                0x1000000c                _ebss = .
+                [!provide]                PROVIDE (end = .)
+
+.noinit_RAM2    0x2007c000        0x0
+                0x2007c000                . = ALIGN (0x4)
+ *(.noinit.$RAM2)
+ *(.noinit.$RamAHB32)
+ *(.noinit.$RAM2.*)
+ *(.noinit.$RamAHB32.*)
+                0x2007c000                . = ALIGN (0x4)
+
+.noinit         0x1000000c        0x0
+                0x1000000c                . = ALIGN (0x4)
+                0x1000000c                _noinit = .
+ *(.noinit*)
+                0x1000000c                . = ALIGN (0x4)
+                0x1000000c                _end_noinit = .
+                [!provide]                PROVIDE (_pvHeapStart = DEFINED (__user_heap_base)?__user_heap_base:.)
+                0x10008000                PROVIDE (_vStackTop = DEFINED (__user_stack_top)?__user_stack_top:(__top_RamLoc32 - 0x0))
+                0xefff74de                PROVIDE (__valid_user_code_checksum = (0x0 - ((((((_vStackTop + (ResetISR + 0x1)) + (NMI_Handler + 0x1)) + (HardFault_Handler + 0x1)) + (DEFINED (MemManage_Handler)?MemManage_Handler:0x0 + 0x1)) + (DEFINED (BusFault_Handler)?BusFault_Handler:0x0 + 0x1)) + (DEFINED (UsageFault_Handler)?UsageFault_Handler:0x0 + 0x1))))
+                0x00000000                _image_start = LOADADDR (.text)
+                0x00000d90                _image_end = (LOADADDR (.data) + SIZEOF (.data))
+                0x00000d90                _image_size = (_image_end - _image_start)
+OUTPUT(DHT22.axf elf32-littlearm)
+
+.debug_info     0x00000000     0x2f16
+ .debug_info    0x00000000     0x10df ./src/DHT22.o
+ .debug_info    0x000010df      0x276 ./src/cr_startup_lpc175x_6x.o
+ .debug_info    0x00001355      0x20f ./src/sysinit.o
+ .debug_info    0x00001564      0x591 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_info    0x00001af5      0xc2a C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_info    0x0000271f      0x347 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_info    0x00002a66      0x4b0 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+
+.debug_abbrev   0x00000000      0xd5c
+ .debug_abbrev  0x00000000      0x379 ./src/DHT22.o
+ .debug_abbrev  0x00000379      0x12a ./src/cr_startup_lpc175x_6x.o
+ .debug_abbrev  0x000004a3       0xeb ./src/sysinit.o
+ .debug_abbrev  0x0000058e      0x16d C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_abbrev  0x000006fb      0x34d C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_abbrev  0x00000a48      0x164 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_abbrev  0x00000bac      0x1b0 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+
+.debug_aranges  0x00000000      0x340
+ .debug_aranges
+                0x00000000       0xb8 ./src/DHT22.o
+ .debug_aranges
+                0x000000b8       0x80 ./src/cr_startup_lpc175x_6x.o
+ .debug_aranges
+                0x00000138       0x20 ./src/sysinit.o
+ .debug_aranges
+                0x00000158       0x38 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_aranges
+                0x00000190      0x120 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_aranges
+                0x000002b0       0x30 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_aranges
+                0x000002e0       0x60 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+
+.debug_ranges   0x00000000      0x2e8
+ .debug_ranges  0x00000000       0xc0 ./src/DHT22.o
+ .debug_ranges  0x000000c0       0x70 ./src/cr_startup_lpc175x_6x.o
+ .debug_ranges  0x00000130       0x10 ./src/sysinit.o
+ .debug_ranges  0x00000140       0x28 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_ranges  0x00000168      0x110 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_ranges  0x00000278       0x20 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_ranges  0x00000298       0x50 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+
+.debug_macro    0x00000000     0x4ee5
+ .debug_macro   0x00000000      0x1eb ./src/DHT22.o
+ .debug_macro   0x000001eb      0xaa8 ./src/DHT22.o
+ .debug_macro   0x00000c93       0x10 ./src/DHT22.o
+ .debug_macro   0x00000ca3      0x12e ./src/DHT22.o
+ .debug_macro   0x00000dd1      0x5b3 ./src/DHT22.o
+ .debug_macro   0x00001384       0x22 ./src/DHT22.o
+ .debug_macro   0x000013a6       0x7b ./src/DHT22.o
+ .debug_macro   0x00001421       0x10 ./src/DHT22.o
+ .debug_macro   0x00001431       0x2d ./src/DHT22.o
+ .debug_macro   0x0000145e       0x3a ./src/DHT22.o
+ .debug_macro   0x00001498       0x2d ./src/DHT22.o
+ .debug_macro   0x000014c5      0xbb1 ./src/DHT22.o
+ .debug_macro   0x00002076      0x22c ./src/DHT22.o
+ .debug_macro   0x000022a2       0x42 ./src/DHT22.o
+ .debug_macro   0x000022e4       0x52 ./src/DHT22.o
+ .debug_macro   0x00002336       0x78 ./src/DHT22.o
+ .debug_macro   0x000023ae       0x82 ./src/DHT22.o
+ .debug_macro   0x00002430      0x48c ./src/DHT22.o
+ .debug_macro   0x000028bc       0x34 ./src/DHT22.o
+ .debug_macro   0x000028f0      0x4c5 ./src/DHT22.o
+ .debug_macro   0x00002db5      0x1b7 ./src/DHT22.o
+ .debug_macro   0x00002f6c       0x10 ./src/DHT22.o
+ .debug_macro   0x00002f7c      0x21b ./src/DHT22.o
+ .debug_macro   0x00003197      0x1b9 ./src/DHT22.o
+ .debug_macro   0x00003350       0x40 ./src/DHT22.o
+ .debug_macro   0x00003390       0x22 ./src/DHT22.o
+ .debug_macro   0x000033b2      0x162 ./src/DHT22.o
+ .debug_macro   0x00003514       0x94 ./src/DHT22.o
+ .debug_macro   0x000035a8       0xb8 ./src/DHT22.o
+ .debug_macro   0x00003660       0x4c ./src/DHT22.o
+ .debug_macro   0x000036ac       0x16 ./src/DHT22.o
+ .debug_macro   0x000036c2      0x328 ./src/DHT22.o
+ .debug_macro   0x000039ea       0x49 ./src/DHT22.o
+ .debug_macro   0x00003a33       0x16 ./src/DHT22.o
+ .debug_macro   0x00003a49       0xca ./src/DHT22.o
+ .debug_macro   0x00003b13       0x18 ./src/DHT22.o
+ .debug_macro   0x00003b2b       0x1d ./src/cr_startup_lpc175x_6x.o
+ .debug_macro   0x00003b48      0x1cd ./src/sysinit.o
+ .debug_macro   0x00003d15      0x1cd C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x00003ee2      0xa9c C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x0000497e      0x1cd C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00004b4b      0x1cd C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00004d18      0x1cd C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+
+.debug_line     0x00000000     0x27d1
+ .debug_line    0x00000000      0x89a ./src/DHT22.o
+ .debug_line    0x0000089a      0x160 ./src/cr_startup_lpc175x_6x.o
+ .debug_line    0x000009fa      0x46f ./src/sysinit.o
+ .debug_line    0x00000e69      0x503 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_line    0x0000136c      0x96a C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_line    0x00001cd6      0x51f C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_line    0x000021f5      0x5dc C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+
+.debug_str      0x00000000    0x125e3
+ .debug_str     0x00000000    0x1172d ./src/DHT22.o
+                              0x11830 (size before relaxing)
+ .debug_str     0x0001172d      0x1c6 ./src/cr_startup_lpc175x_6x.o
+                               0x2f7d (size before relaxing)
+ .debug_str     0x000118f3      0x1bd ./src/sysinit.o
+                              0x10f9f (size before relaxing)
+ .debug_str     0x00011ab0      0x17b C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+                              0x113bb (size before relaxing)
+ .debug_str     0x00011c2b      0x857 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                              0x11a39 (size before relaxing)
+ .debug_str     0x00012482       0x9d C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+                              0x10eb6 (size before relaxing)
+ .debug_str     0x0001251f       0xc4 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                              0x1109e (size before relaxing)
+
+.comment        0x00000000       0x75
+ .comment       0x00000000       0x75 ./src/DHT22.o
+                                 0x76 (size before relaxing)
+ .comment       0x00000075       0x76 ./src/cr_startup_lpc175x_6x.o
+ .comment       0x00000075       0x76 ./src/sysinit.o
+ .comment       0x00000075       0x76 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .comment       0x00000075       0x76 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .comment       0x00000075       0x76 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .comment       0x00000075       0x76 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .comment       0x00000075       0x76 c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_c.a(__weak__main.o)
+
+.ARM.attributes
+                0x00000000       0x2d
+ .ARM.attributes
+                0x00000000       0x2d ./src/DHT22.o
+ .ARM.attributes
+                0x0000002d       0x2d ./src/cr_startup_lpc175x_6x.o
+ .ARM.attributes
+                0x0000005a       0x2d ./src/sysinit.o
+ .ARM.attributes
+                0x00000087       0x2d C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .ARM.attributes
+                0x000000b4       0x2d C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .ARM.attributes
+                0x000000e1       0x2d C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .ARM.attributes
+                0x0000010e       0x2d C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .ARM.attributes
+                0x0000013b       0x2d c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_c.a(__weak__main.o)
+
+.debug_frame    0x00000000      0xb64
+ .debug_frame   0x00000000      0x2fc ./src/DHT22.o
+ .debug_frame   0x000002fc      0x170 ./src/cr_startup_lpc175x_6x.o
+ .debug_frame   0x0000046c       0x34 ./src/sysinit.o
+ .debug_frame   0x000004a0       0x88 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_frame   0x00000528      0x490 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_frame   0x000009b8       0x80 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_frame   0x00000a38      0x12c C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+
+Cross Reference Table
+
+Symbol                                            File
+ADC_IRQHandler                                    ./src/cr_startup_lpc175x_6x.o
+BOD_IRQHandler                                    ./src/cr_startup_lpc175x_6x.o
+BusFault_Handler                                  ./src/cr_startup_lpc175x_6x.o
+CANActivity_IRQHandler                            ./src/cr_startup_lpc175x_6x.o
+CAN_IRQHandler                                    ./src/cr_startup_lpc175x_6x.o
+CRP_WORD                                          ./src/crp.o
+Chip_Clock_DisablePLL                             C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                                                  C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+Chip_Clock_DisablePeriphClock                     C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+Chip_Clock_EnablePLL                              C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                                                  C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                                                  C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+Chip_Clock_EnablePeriphClock                      C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                                                  C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+                                                  ./src/DHT22.o
+Chip_Clock_GetCPUClockDiv                         C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+Chip_Clock_GetCPUClockSource                      C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+Chip_Clock_GetMainClockRate                       C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+Chip_Clock_GetMainPLLOutClockRate                 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+Chip_Clock_GetPCLKDiv                             C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+Chip_Clock_GetPeripheralClockRate                 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+Chip_Clock_GetSYSCLKRate                          C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+Chip_Clock_GetSystemClockRate                     C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                                                  C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+Chip_Clock_GetUSBClockDiv                         C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+Chip_Clock_GetUSBClockRate                        C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+Chip_Clock_GetUSBPLLOutClockRate                  C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+Chip_Clock_IsPeripheralClockEnabled               C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+Chip_Clock_SetCLKOUTSource                        C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+Chip_Clock_SetCPUClockDiv                         C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                                                  C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+Chip_Clock_SetCPUClockSource                      C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+Chip_Clock_SetPCLKDiv                             C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+Chip_Clock_SetUSBClockDiv                         C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+Chip_Clock_SetupPLL                               C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                                                  C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                                                  C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+Chip_IOCON_PinMux                                 C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+Chip_IOCON_PinMuxSet                              C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+                                                  ./src/DHT22.o
+Chip_IOCON_SetPinMuxing                           C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+Chip_SetupIrcClocking                             C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+Chip_SetupXtalClocking                            C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                                                  ./src/DHT22.o
+Chip_SystemInit                                   C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                                                  ./src/sysinit.o
+Chip_USB_Init                                     C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+DMA_IRQHandler                                    ./src/cr_startup_lpc175x_6x.o
+DebugMon_Handler                                  ./src/cr_startup_lpc175x_6x.o
+DemoramS                                          ./src/DHT22.o
+DemorauS                                          ./src/DHT22.o
+EINT0_IRQHandler                                  ./src/cr_startup_lpc175x_6x.o
+EINT1_IRQHandler                                  ./src/cr_startup_lpc175x_6x.o
+EINT2_IRQHandler                                  ./src/cr_startup_lpc175x_6x.o
+EINT3_IRQHandler                                  ./src/cr_startup_lpc175x_6x.o
+ETH_IRQHandler                                    ./src/cr_startup_lpc175x_6x.o
+HardFault_Handler                                 ./src/cr_startup_lpc175x_6x.o
+I2C0_IRQHandler                                   ./src/cr_startup_lpc175x_6x.o
+I2C1_IRQHandler                                   ./src/cr_startup_lpc175x_6x.o
+I2C2_IRQHandler                                   ./src/cr_startup_lpc175x_6x.o
+I2S_IRQHandler                                    ./src/cr_startup_lpc175x_6x.o
+IntDefaultHandler                                 ./src/cr_startup_lpc175x_6x.o
+MCPWM_IRQHandler                                  ./src/cr_startup_lpc175x_6x.o
+MemManage_Handler                                 ./src/cr_startup_lpc175x_6x.o
+NMI_Handler                                       ./src/cr_startup_lpc175x_6x.o
+OscRateIn                                         ./src/sysinit.o
+                                                  C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+PLL0_IRQHandler                                   ./src/cr_startup_lpc175x_6x.o
+PLL1_IRQHandler                                   ./src/cr_startup_lpc175x_6x.o
+PWM1_IRQHandler                                   ./src/cr_startup_lpc175x_6x.o
+PendSV_Handler                                    ./src/cr_startup_lpc175x_6x.o
+QEI_IRQHandler                                    ./src/cr_startup_lpc175x_6x.o
+RIT_IRQHandler                                    ./src/cr_startup_lpc175x_6x.o
+RTCOscRateIn                                      ./src/sysinit.o
+                                                  C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+RTC_IRQHandler                                    ./src/cr_startup_lpc175x_6x.o
+ResetISR                                          ./src/cr_startup_lpc175x_6x.o
+SPI_IRQHandler                                    ./src/cr_startup_lpc175x_6x.o
+SSP0_IRQHandler                                   ./src/cr_startup_lpc175x_6x.o
+SSP1_IRQHandler                                   ./src/cr_startup_lpc175x_6x.o
+SVC_Handler                                       ./src/cr_startup_lpc175x_6x.o
+SysTick_Handler                                   ./src/DHT22.o
+SystemCoreClock                                   C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+                                                  ./src/DHT22.o
+SystemCoreClockUpdate                             C:\Users\nicol\git\teclado_tds\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+                                                  ./src/DHT22.o
+SystemInit                                        ./src/sysinit.o
+                                                  ./src/cr_startup_lpc175x_6x.o
+TIMER0_IRQHandler                                 ./src/cr_startup_lpc175x_6x.o
+TIMER1_IRQHandler                                 ./src/cr_startup_lpc175x_6x.o
+TIMER2_IRQHandler                                 ./src/cr_startup_lpc175x_6x.o
+TIMER3_IRQHandler                                 ./src/cr_startup_lpc175x_6x.o
+TareaSensor                                       ./src/DHT22.o
+UART0_IRQHandler                                  ./src/cr_startup_lpc175x_6x.o
+UART1_IRQHandler                                  ./src/cr_startup_lpc175x_6x.o
+UART2_IRQHandler                                  ./src/cr_startup_lpc175x_6x.o
+UART3_IRQHandler                                  ./src/cr_startup_lpc175x_6x.o
+USBActivity_IRQHandler                            ./src/cr_startup_lpc175x_6x.o
+USB_IRQHandler                                    ./src/cr_startup_lpc175x_6x.o
+UsageFault_Handler                                ./src/cr_startup_lpc175x_6x.o
+WDT_IRQHandler                                    ./src/cr_startup_lpc175x_6x.o
+__bss_section_table_end                           ./src/cr_startup_lpc175x_6x.o
+__data_section_table                              ./src/cr_startup_lpc175x_6x.o
+__data_section_table_end                          ./src/cr_startup_lpc175x_6x.o
+__main                                            c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_c.a(__weak__main.o)
+                                                  ./src/cr_startup_lpc175x_6x.o
+__valid_user_code_checksum                        ./src/cr_startup_lpc175x_6x.o
+__weak_main                                       c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_c.a(__weak__main.o)
+_vStackTop                                        ./src/cr_startup_lpc175x_6x.o
+bss_init                                          ./src/cr_startup_lpc175x_6x.o
+data_init                                         ./src/cr_startup_lpc175x_6x.o
+esperaCero                                        ./src/DHT22.o
+esperaUno                                         ./src/DHT22.o
+g_pfnVectors                                      ./src/cr_startup_lpc175x_6x.o
+                                                  ./src/sysinit.o
+main                                              ./src/DHT22.o
+                                                  c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_c.a(__weak__main.o)
