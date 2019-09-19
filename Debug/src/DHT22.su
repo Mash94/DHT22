@@ -11,10 +11,9 @@ gpio_17xx_40xx.h:156:20:Chip_GPIO_SetPinDIRInput	16	static
 gpio_17xx_40xx.h:408:20:Chip_GPIO_SetPinOutHigh	16	static
 gpio_17xx_40xx.h:450:20:Chip_GPIO_SetPinOutLow	16	static
 gpio_17xx_40xx.h:464:20:Chip_GPIO_SetPinToggle	24	static
-DHT22.c:8:6:DemoramS	32	static
-DHT22.c:26:6:DemorauS	32	static
-DHT22.c:37:6:esperaUno	16	static
-DHT22.c:46:6:esperaCero	16	static
-DHT22.c:55:6:TareaSensor	32	static
-DHT22.c:116:5:main	8	static
-DHT22.c:144:6:SysTick_Handler	4	static
+DHT22.c:15:6:DemorauS	32	static
+DHT22.c:26:6:esperaUno	16	static
+DHT22.c:36:6:esperaCero	16	static
+DHT22.c:46:6:TareaSensor	512	static
+DHT22.c:130:5:main	8	static
+DHT22.c:158:6:SysTick_Handler	4	static
