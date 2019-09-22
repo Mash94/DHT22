@@ -5,6 +5,9 @@
 #define LED_PORT	(0)
 #define LED_PIN		(22)
 
+#define MIN_INTERVAL 2000 /**< min interval value */
+#define TIMEOUT -1        /**< timeout on */
+
 /****************************************************************************************
  * Function Name : void DemorauS(uint32_t);
  * Description : Blocking delay
@@ -22,42 +25,39 @@ void DemorauS(uint32_t micros){
 	}
 	time = DWT->CYCCNT;
 }
-
-void esperaUno(void)
-{
-	int pin = 0;
-	do{
-		pin = Chip_GPIO_ReadPortBit(LPC_GPIO, DHT22_PORT, DHT22_PIN);
-		DemorauS(1);
-	}while((!pin) && (Chip_GPIO_ReadPortBit(LPC_GPIO, DHT22_PORT, DHT22_PIN)));
-	pin = Chip_GPIO_ReadPortBit(LPC_GPIO, DHT22_PORT, DHT22_PIN);
+/****************************************************************************************
+ * Function Name : uint32_t expectPulse(uint32_t);
+ * Description : Blocking delay
+ * Input : Time in Microseconds
+ * Output :
+ * Void Note :
+****************************************************************************************/
+uint32_t expectPulse(uint32_t estado){
+	estado =0;
 }
-
-void esperaCero(void)
-{
-	int pin = 0;
-	do{
-		pin = Chip_GPIO_ReadPortBit(LPC_GPIO, DHT22_PORT, DHT22_PIN);
-		DemorauS(1);
-	}while(pin);
-	pin = Chip_GPIO_ReadPortBit(LPC_GPIO, DHT22_PORT, DHT22_PIN);
-}
-
-void TareaSensor(void)
+/****************************************************************************************
+ * Function Name : void DHT22_update(void);
+ * Description : Blocking read
+ * Input :
+ * Output :
+ * Void Note :
+****************************************************************************************/
+void DHT22_update(void)
 {
 	static int espera = 100;
-	static int estado = 0;
+	static int estado = 0;;
 
-	int i,j,aux;
-	uint8_t val=0;
-	uint8_t trama[5];
-	uint32_t checksum = 0;
-	uint32_t humedad = 0;
-	uint32_t temperatura = 0;
-	bool muestra[450];
-	uint32_t uno =0;
-	uint32_t cero =0;
-	uint32_t time = 0;
+    // Check if sensor was read less than two seconds ago and return early to use last reading.
+    //Esta función no puede llamarse más de una vez cada 2 segundos, colocar dentro del TDS y listo
+    // Reset 40 bits of received data to zero.
+    uint32_t cycles[80];
+    uint8_t data[5];
+    bool lastresult = 0;
+    uint32_t lowCycles = 0;
+    uint32_t highCycles = 0;
+    uint8_t i;
+
+    Chip_GPIO_SetPinDIRInput(LPC_GPIO, DHT22_PORT, DHT22_PIN);
 
 	if(!--espera)
 	{
@@ -70,61 +70,98 @@ void TareaSensor(void)
 		estado--;
 		Chip_GPIO_SetPinDIROutput(LPC_GPIO, DHT22_PORT, DHT22_PIN);
 	}
-	else
-	{
-		for(i=0;i<5;i++){
-			trama[i]=0;
+	else {
+		for (i = 0; i < 5; i++) {
+			data[i] = 0;
 		}
-		uno = 0;
-		cero = 0;
+		// Send start signal.  See DHT datasheet for full signal diagram:
+		// http://www.adafruit.com/datasheets/Digital%20humidity%20and%20temperature%20sensor%20AM2302.pdf
 
+		// Go into high impedence state to let pull-up raise data line level and
+		// start the reading process.
 		Chip_GPIO_SetPinDIRInput(LPC_GPIO, DHT22_PORT, DHT22_PIN);
-		esperaCero();
+		DemorauS(1000); //demora de 1 milisegundo
 
-		DWT->CYCCNT=0;
-		esperaUno();
-		time = DWT->CYCCNT;
-		esperaCero();
+		// First set data line low for a period according to sensor type
+		Chip_GPIO_SetPinOutLow(LPC_GPIO, DHT22_PORT, DHT22_PIN);
+		DemorauS(1100); // data sheet says "at least 1ms"
 
-		for(j=0; j<5 ; j++){
-			for(i=0;i<8;i++)
-			{
+		// End the start signal by setting data line high for 40 microseconds.
+		Chip_GPIO_SetPinDIRInput(LPC_GPIO, DHT22_PORT, DHT22_PIN);
 
-				esperaUno();
-				DemorauS(40);
+		// Delay a moment to let sensor pull data line low.
+		DemorauS(55);
 
-				if(Chip_GPIO_ReadPortBit(LPC_GPIO, DHT22_PORT, DHT22_PIN))
-				{
-					val = 1;
-					uno++;
-				}else{
-					val = 0;
-					cero++;
-				}
-				trama[j] = (trama[j]<<1) & 0xFF;
-				trama[j] = (trama[j]+val) & 0xFF;
-			}
-			aux = 1;
+		// Now start reading the data line to get the value from the DHT sensor.
+
+		// Turn off interrupts temporarily because the next sections
+		// are timing critical and we don't want any interruptions.
+
+		// First expect a low signal for ~80 microseconds followed by a high signal
+		// for ~80 microseconds again.
+		if (expectPulse(0) == TIMEOUT) {
+			//DEBUG_PRINTLN(F("DHT timeout waiting for start signal low pulse."));
+			lastresult = false;
+		}
+		if (expectPulse(1) == TIMEOUT) {
+			//DEBUG_PRINTLN(F("DHT timeout waiting for start signal high pulse."));
+			lastresult = false;
 		}
 
-		aux = 1;
-		Chip_GPIO_SetPinToggle(LPC_GPIO,LED_PORT, LED_PIN);
-		humedad = (((uint32_t)trama[0])<<8) + ((uint32_t)trama[1]);
-		temperatura = (((uint32_t)trama[2])<<8) + ((uint32_t)trama[3]);
-
-		for(j=0 ; j<4 ; j++){
-			checksum += ((trama[j]) & 0xFF);
-			checksum &= 0xFF;
+		// Now read the 40 bits sent by the sensor.  Each bit is sent as a 50
+		// microsecond low pulse followed by a variable length high pulse.  If the
+		// high pulse is ~28 microseconds then it's a 0 and if it's ~70 microseconds
+		// then it's a 1.  We measure the cycle count of the initial 50us low pulse
+		// and use that to compare to the cycle count of the high pulse to determine
+		// if the bit is a 0 (high state cycle count < low state cycle count), or a
+		// 1 (high state cycle count > low state cycle count). Note that for speed
+		// all the pulses are read into a array and then examined in a later step.
+		for (i = 0; i < 80; i += 2) {
+			cycles[i] = expectPulse(0);
+			cycles[i + 1] = expectPulse(1);
 		}
-		if(checksum != trama[4]){
-			for(i = 0 ; i<5 ; i++){
-				trama[i] = 0xFF;
+		// Timing critical code is now complete.
+
+		// Inspect pulses and determine which ones are 0 (high state cycle count < low
+		// state cycle count), or 1 (high state cycle count > low state cycle count).
+		for (int i = 0; i < 40; ++i) {
+			lowCycles = cycles[2 * i];
+			highCycles = cycles[(2 * i) + 1];
+			if ((lowCycles == TIMEOUT) || (highCycles == TIMEOUT)) { //DHT timeout waiting for pulse
+				lastresult = false;
 			}
-		}else{
-			aux = 1;
+			data[i / 8] <<= 1;
+			// Now compare the low and high cycle times to see if the bit is a 0 or 1.
+			if (highCycles > lowCycles) {
+				// High cycles are greater than 50us low cycle count, must be a 1.
+				data[i / 8] |= 1;
+			}
+			// Else high cycles are less than (or equal to, a weird case) the 50us low
+			// cycle count so this must be a zero.  Nothing needs to be changed in the
+			// stored data.
+		}
+
+		//   DEBUG_PRINTLN(F("Received from DHT:"));
+		//   DEBUG_PRINT(data[0], HEX);
+		//   DEBUG_PRINT(F(", "));
+		//   DEBUG_PRINT(data[1], HEX);
+		//   DEBUG_PRINT(F(", "));
+		//   DEBUG_PRINT(data[2], HEX);
+		//   DEBUG_PRINT(F(", "));
+		//   DEBUG_PRINT(data[3], HEX);
+		//   DEBUG_PRINT(F(", "));
+		//   DEBUG_PRINT(data[4], HEX);
+		//   DEBUG_PRINT(F(" =? "));
+		//   DEBUG_PRINTLN((data[0] + data[1] + data[2] + data[3]) & 0xFF, HEX);
+
+		// Check we read 40 bits and that the checksum matches.
+		if (data[4] == ((data[0] + data[1] + data[2] + data[3]) & 0xFF)) {
+			lastresult = true;
+		} else {
+			//DEBUG_PRINTLN(F("DHT checksum failure!"));
+			lastresult = false;
 		}
 	}
-
 }
 
 int main(void) {
@@ -138,18 +175,18 @@ int main(void) {
 	Chip_IOCON_Init(LPC_IOCON);
 
 	Chip_IOCON_PinMuxSet(LPC_IOCON, DHT22_PORT, DHT22_PIN, IOCON_FUNC0);
-	Chip_GPIO_SetPinOutLow(LPC_GPIO, DHT22_PORT, DHT22_PIN);
 	Chip_GPIO_SetPinDIRInput(LPC_GPIO, DHT22_PORT, DHT22_PIN);
 
 	Chip_GPIO_SetPinDIROutput(LPC_GPIO, LED_PORT, LED_PIN);
 	Chip_GPIO_SetPinOutHigh(LPC_GPIO, LED_PORT, LED_PIN);
+
 
 	/*Inicializa Systick*/
 	SysTick_Config(SystemCoreClock/TIC_SISTEMA); //100Hz Corre a 100MHz y cuenta hasta SystemanCr/TIC TIC es la frec que quiero.
 
 	while(1)
 	{
-		TareaSensor();
+		DHT22_update();
 		__WFI();
     }
     return 0 ;
