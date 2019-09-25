@@ -1,12 +1,17 @@
 #include "chip.h"
 #define TIC_SISTEMA (100)
 #define DHT22_PORT	(2)
+#define TIME_PORT	(2)
 #define DHT22_PIN	(3)
+#define TIME_PIN	(4)
 #define LED_PORT	(0)
 #define LED_PIN		(22)
 
 #define MIN_INTERVAL 2000 /**< min interval value */
 #define TIMEOUT -1        /**< timeout on */
+#define TIMELIMIT 10000
+
+uint8_t data[5];
 
 /****************************************************************************************
  * Function Name : void DemorauS(uint32_t);
@@ -32,8 +37,35 @@ void DemorauS(uint32_t micros){
  * Output :
  * Void Note :
 ****************************************************************************************/
-uint32_t expectPulse(uint32_t estado){
-	estado =0;
+uint32_t expectPulseOne(uint32_t estado){
+	uint32_t time;
+	DWT->CYCCNT=0;
+	if(estado){
+		while( (!Chip_GPIO_GetPinState(LPC_GPIO, DHT22_PORT, DHT22_PIN)) && ((int)((DWT->CYCCNT)/100) < TIMELIMIT));
+	}else{
+		while( (Chip_GPIO_GetPinState(LPC_GPIO, DHT22_PORT, DHT22_PIN)) && ((int)((DWT->CYCCNT)/100) < TIMELIMIT));
+	}
+	time = (int)((DWT->CYCCNT)/100);
+	if(time >= TIMELIMIT){
+		return TIMEOUT;
+	}else{
+		return time;
+	}
+}
+uint32_t expectPulseZero(uint32_t estado){
+	uint32_t time;
+	DWT->CYCCNT=0;
+	if(estado){
+		while( (!Chip_GPIO_GetPinState(LPC_GPIO, DHT22_PORT, DHT22_PIN)) && ((int)((DWT->CYCCNT)/100) < TIMELIMIT));
+	}else{
+		while( (Chip_GPIO_GetPinState(LPC_GPIO, DHT22_PORT, DHT22_PIN)) && ((int)((DWT->CYCCNT)/100) < TIMELIMIT));
+	}
+	time = (int)((DWT->CYCCNT)/100);
+	if(time >= TIMELIMIT){
+		return TIMEOUT;
+	}else{
+		return time;
+	}
 }
 /****************************************************************************************
  * Function Name : void DHT22_update(void);
@@ -51,13 +83,12 @@ void DHT22_update(void)
     //Esta función no puede llamarse más de una vez cada 2 segundos, colocar dentro del TDS y listo
     // Reset 40 bits of received data to zero.
     uint32_t cycles[80];
-    uint8_t data[5];
     bool lastresult = 0;
     uint32_t lowCycles = 0;
     uint32_t highCycles = 0;
     uint8_t i;
 
-    Chip_GPIO_SetPinDIRInput(LPC_GPIO, DHT22_PORT, DHT22_PIN);
+    //Chip_GPIO_SetPinDIRInput(LPC_GPIO, DHT22_PORT, DHT22_PIN);
 
 	if(!--espera)
 	{
@@ -69,8 +100,7 @@ void DHT22_update(void)
 	{
 		estado--;
 		Chip_GPIO_SetPinDIROutput(LPC_GPIO, DHT22_PORT, DHT22_PIN);
-	}
-	else {
+
 		for (i = 0; i < 5; i++) {
 			data[i] = 0;
 		}
@@ -79,10 +109,13 @@ void DHT22_update(void)
 
 		// Go into high impedence state to let pull-up raise data line level and
 		// start the reading process.
-		Chip_GPIO_SetPinDIRInput(LPC_GPIO, DHT22_PORT, DHT22_PIN);
-		DemorauS(1000); //demora de 1 milisegundo
+		//Chip_GPIO_SetPinDIRInput(LPC_GPIO, DHT22_PORT, DHT22_PIN);
+		//DemorauS(1000); //demora de 1 milisegundo
+
+		//Chip_GPIO_SetPinToggle(LPC_GPIO, TIME_PORT, TIME_PIN);
 
 		// First set data line low for a period according to sensor type
+		Chip_GPIO_SetPinDIROutput(LPC_GPIO, DHT22_PORT, DHT22_PIN);
 		Chip_GPIO_SetPinOutLow(LPC_GPIO, DHT22_PORT, DHT22_PIN);
 		DemorauS(1100); // data sheet says "at least 1ms"
 
@@ -90,7 +123,7 @@ void DHT22_update(void)
 		Chip_GPIO_SetPinDIRInput(LPC_GPIO, DHT22_PORT, DHT22_PIN);
 
 		// Delay a moment to let sensor pull data line low.
-		DemorauS(55);
+		DemorauS(50);
 
 		// Now start reading the data line to get the value from the DHT sensor.
 
@@ -99,11 +132,11 @@ void DHT22_update(void)
 
 		// First expect a low signal for ~80 microseconds followed by a high signal
 		// for ~80 microseconds again.
-		if (expectPulse(0) == TIMEOUT) {
+		if (expectPulseZero(0) == TIMEOUT) {
 			//DEBUG_PRINTLN(F("DHT timeout waiting for start signal low pulse."));
 			lastresult = false;
 		}
-		if (expectPulse(1) == TIMEOUT) {
+		if (expectPulseOne(1) == TIMEOUT) {
 			//DEBUG_PRINTLN(F("DHT timeout waiting for start signal high pulse."));
 			lastresult = false;
 		}
@@ -116,17 +149,18 @@ void DHT22_update(void)
 		// if the bit is a 0 (high state cycle count < low state cycle count), or a
 		// 1 (high state cycle count > low state cycle count). Note that for speed
 		// all the pulses are read into a array and then examined in a later step.
-		for (i = 0; i < 80; i += 2) {
-			cycles[i] = expectPulse(0);
-			cycles[i + 1] = expectPulse(1);
+
+		 for (i = 0; i < 81; i += 2) {
+			cycles[i] = expectPulseZero(0);
+			cycles[i + 1] = expectPulseOne(1);
 		}
 		// Timing critical code is now complete.
 
 		// Inspect pulses and determine which ones are 0 (high state cycle count < low
 		// state cycle count), or 1 (high state cycle count > low state cycle count).
-		for (int i = 0; i < 40; ++i) {
-			lowCycles = cycles[2 * i];
-			highCycles = cycles[(2 * i) + 1];
+		for (int i = 0; i < 41; ++i) {
+			lowCycles = cycles[(2 * i)+1];
+			highCycles = cycles[(2 * i) + 2];
 			if ((lowCycles == TIMEOUT) || (highCycles == TIMEOUT)) { //DHT timeout waiting for pulse
 				lastresult = false;
 			}
@@ -180,9 +214,13 @@ int main(void) {
 	Chip_GPIO_SetPinDIROutput(LPC_GPIO, LED_PORT, LED_PIN);
 	Chip_GPIO_SetPinOutHigh(LPC_GPIO, LED_PORT, LED_PIN);
 
+	Chip_GPIO_SetPinDIROutput(LPC_GPIO, TIME_PORT, TIME_PIN);
+	Chip_GPIO_SetPinOutHigh(LPC_GPIO, TIME_PORT, TIME_PIN);
+
 
 	/*Inicializa Systick*/
-	SysTick_Config(SystemCoreClock/TIC_SISTEMA); //100Hz Corre a 100MHz y cuenta hasta SystemanCr/TIC TIC es la frec que quiero.
+
+	SysTick_Config(SystemCoreClock/200); //200Hz  = 5mS Corre a 100MHz y cuenta hasta SystemanCr/TIC TIC es la frec que quiero.
 
 	while(1)
 	{

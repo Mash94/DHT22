@@ -516,7 +516,7 @@ END GROUP
                 0x20084000                __top_RamAHB32 = 0x20084000
                 0x20084000                __top_RAM2 = 0x20084000
 
-.text           0x00000000      0xce0
+.text           0x00000000      0xe40
  FILL mask 0xff
                 0x00000000                __vectors_start__ = ABSOLUTE (.)
  *(.isr_vector)
@@ -525,16 +525,16 @@ END GROUP
                 0x000000cc                . = ALIGN (0x4)
                 0x000000cc                __section_table_start = .
                 0x000000cc                __data_section_table = .
-                0x000000cc        0x4 LONG 0xce0 LOADADDR (.data)
+                0x000000cc        0x4 LONG 0xe40 LOADADDR (.data)
                 0x000000d0        0x4 LONG 0x10000000 ADDR (.data)
                 0x000000d4        0x4 LONG 0x4 SIZEOF (.data)
-                0x000000d8        0x4 LONG 0xce0 LOADADDR (.data_RAM2)
+                0x000000d8        0x4 LONG 0xe40 LOADADDR (.data_RAM2)
                 0x000000dc        0x4 LONG 0x2007c000 ADDR (.data_RAM2)
                 0x000000e0        0x4 LONG 0x0 SIZEOF (.data_RAM2)
                 0x000000e4                __data_section_table_end = .
                 0x000000e4                __bss_section_table = .
                 0x000000e4        0x4 LONG 0x10000004 ADDR (.bss)
-                0x000000e8        0x4 LONG 0x8 SIZEOF (.bss)
+                0x000000e8        0x4 LONG 0x10 SIZEOF (.bss)
                 0x000000ec        0x4 LONG 0x2007c000 ADDR (.bss_RAM2)
                 0x000000f0        0x4 LONG 0x0 SIZEOF (.bss_RAM2)
                 0x000000f4                __bss_section_table_end = .
@@ -600,154 +600,159 @@ END GROUP
                 0x000002e8       0x16 ./src/DHT22.o
  .text.Chip_GPIO_Init
                 0x000002fe       0x16 ./src/DHT22.o
+ .text.Chip_GPIO_GetPinState
+                0x00000314       0x38 ./src/DHT22.o
  .text.Chip_GPIO_SetPinDIROutput
-                0x00000314       0x36 ./src/DHT22.o
+                0x0000034c       0x36 ./src/DHT22.o
  .text.Chip_GPIO_SetPinDIRInput
-                0x0000034a       0x3a ./src/DHT22.o
+                0x00000382       0x3a ./src/DHT22.o
  .text.Chip_GPIO_SetPinOutHigh
-                0x00000384       0x2e ./src/DHT22.o
+                0x000003bc       0x2e ./src/DHT22.o
  .text.Chip_GPIO_SetPinOutLow
-                0x000003b2       0x2e ./src/DHT22.o
+                0x000003ea       0x2e ./src/DHT22.o
  .text.DemorauS
-                0x000003e0       0x4c ./src/DHT22.o
-                0x000003e0                DemorauS
- .text.expectPulse
-                0x0000042c       0x18 ./src/DHT22.o
-                0x0000042c                expectPulse
+                0x00000418       0x4c ./src/DHT22.o
+                0x00000418                DemorauS
+ .text.expectPulseOne
+                0x00000464       0xa0 ./src/DHT22.o
+                0x00000464                expectPulseOne
+ .text.expectPulseZero
+                0x00000504       0xa0 ./src/DHT22.o
+                0x00000504                expectPulseZero
  .text.DHT22_update
-                0x00000444      0x204 ./src/DHT22.o
-                0x00000444                DHT22_update
- .text.main     0x00000648       0x74 ./src/DHT22.o
-                0x00000648                main
+                0x000005a4      0x1f0 ./src/DHT22.o
+                0x000005a4                DHT22_update
+ .text.main     0x00000794       0x88 ./src/DHT22.o
+                0x00000794                main
  .text.SysTick_Handler
-                0x000006bc        0xc ./src/DHT22.o
-                0x000006bc                SysTick_Handler
+                0x0000081c        0xc ./src/DHT22.o
+                0x0000081c                SysTick_Handler
  .text.SystemInit
-                0x000006c8       0x24 ./src/sysinit.o
-                0x000006c8                SystemInit
+                0x00000828       0x24 ./src/sysinit.o
+                0x00000828                SystemInit
  .text.SystemCoreClockUpdate
-                0x000006ec       0x18 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
-                0x000006ec                SystemCoreClockUpdate
+                0x0000084c       0x18 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+                0x0000084c                SystemCoreClockUpdate
  .text.Chip_Clock_IsMainPLLEnabled
-                0x00000704       0x24 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000864       0x24 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .text.Chip_Clock_IsMainPLLConnected
-                0x00000728       0x24 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000888       0x24 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .text.Chip_Clock_FeedPLL
-                0x0000074c       0x34 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x000008ac       0x34 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .text.Chip_Clock_GetMainPLLSource
-                0x00000780       0x20 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x000008e0       0x20 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .text.Chip_Clock_GetMainOscRate
-                0x000007a0       0x14 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000900       0x14 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .text.Chip_Clock_GetIntOscRate
-                0x000007b4       0x14 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000914       0x14 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .text.Chip_Clock_GetRTCOscRate
-                0x000007c8       0x14 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000928       0x14 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .text.Chip_Clock_GetMainPLLInClockRate
-                0x000007dc        0xe E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
- *fill*         0x000007ea        0x2 ff
+                0x0000093c        0xe E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ *fill*         0x0000094a        0x2 ff
  .text.Chip_Clock_EnablePLL
-                0x000007ec       0x44 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x000007ec                Chip_Clock_EnablePLL
+                0x0000094c       0x44 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x0000094c                Chip_Clock_EnablePLL
  .text.Chip_Clock_DisablePLL
-                0x00000830       0x48 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x00000830                Chip_Clock_DisablePLL
+                0x00000990       0x48 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000990                Chip_Clock_DisablePLL
  .text.Chip_Clock_SetupPLL
-                0x00000878       0x5c E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x00000878                Chip_Clock_SetupPLL
+                0x000009d8       0x5c E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x000009d8                Chip_Clock_SetupPLL
  .text.Chip_Clock_EnablePeriphClock
-                0x000008d4       0x34 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x000008d4                Chip_Clock_EnablePeriphClock
+                0x00000a34       0x34 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000a34                Chip_Clock_EnablePeriphClock
  .text.Chip_Clock_GetCPUClockSource
-                0x00000908       0x24 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x00000908                Chip_Clock_GetCPUClockSource
+                0x00000a68       0x24 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000a68                Chip_Clock_GetCPUClockSource
  .text.Chip_Clock_SetCPUClockDiv
-                0x0000092c       0x20 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x0000092c                Chip_Clock_SetCPUClockDiv
+                0x00000a8c       0x20 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000a8c                Chip_Clock_SetCPUClockDiv
  .text.Chip_Clock_GetCPUClockDiv
-                0x0000094c       0x1c E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x0000094c                Chip_Clock_GetCPUClockDiv
+                0x00000aac       0x1c E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000aac                Chip_Clock_GetCPUClockDiv
  .text.Chip_Clock_GetSYSCLKRate
-                0x00000968       0x34 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x00000968                Chip_Clock_GetSYSCLKRate
+                0x00000ac8       0x34 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000ac8                Chip_Clock_GetSYSCLKRate
  .text.Chip_Clock_GetMainPLLOutClockRate
-                0x0000099c       0x54 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x0000099c                Chip_Clock_GetMainPLLOutClockRate
+                0x00000afc       0x54 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000afc                Chip_Clock_GetMainPLLOutClockRate
  .text.Chip_Clock_GetMainClockRate
-                0x000009f0       0x28 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x000009f0                Chip_Clock_GetMainClockRate
+                0x00000b50       0x28 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000b50                Chip_Clock_GetMainClockRate
  .text.Chip_Clock_GetSystemClockRate
-                0x00000a18       0x18 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x00000a18                Chip_Clock_GetSystemClockRate
+                0x00000b78       0x18 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000b78                Chip_Clock_GetSystemClockRate
  .text.Chip_IOCON_PinMuxSet
-                0x00000a30       0x36 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
-                0x00000a30                Chip_IOCON_PinMuxSet
+                0x00000b90       0x36 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+                0x00000b90                Chip_IOCON_PinMuxSet
  .text.Chip_IOCON_PinMux
-                0x00000a66       0x94 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
-                0x00000a66                Chip_IOCON_PinMux
- *fill*         0x00000afa        0x2 ff
+                0x00000bc6       0x94 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+                0x00000bc6                Chip_IOCON_PinMux
+ *fill*         0x00000c5a        0x2 ff
  .text.Chip_Clock_IsMainPLLEnabled
-                0x00000afc       0x24 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x00000c5c       0x24 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
  .text.Chip_Clock_IsMainPLLLocked
-                0x00000b20       0x24 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x00000c80       0x24 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
  .text.Chip_Clock_IsMainPLLConnected
-                0x00000b44       0x24 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x00000ca4       0x24 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
  .text.Chip_Clock_EnableCrystal
-                0x00000b68       0x20 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x00000cc8       0x20 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
  .text.Chip_Clock_IsCrystalEnabled
-                0x00000b88       0x24 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x00000ce8       0x24 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
  .text.Chip_Clock_SetMainPLLSource
-                0x00000bac       0x20 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x00000d0c       0x20 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
  .text.Chip_SetupIrcClocking
-                0x00000bcc       0x6a E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
-                0x00000bcc                Chip_SetupIrcClocking
+                0x00000d2c       0x6a E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x00000d2c                Chip_SetupIrcClocking
  .text.Chip_SetupXtalClocking
-                0x00000c36       0x90 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
-                0x00000c36                Chip_SetupXtalClocking
+                0x00000d96       0x90 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x00000d96                Chip_SetupXtalClocking
  .text.Chip_SystemInit
-                0x00000cc6        0xc E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
-                0x00000cc6                Chip_SystemInit
+                0x00000e26        0xc E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x00000e26                Chip_SystemInit
  .text.__weak_main
-                0x00000cd2        0x4 c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_c.a(__weak__main.o)
-                0x00000cd2                __weak_main
-                0x00000cd2                __main
+                0x00000e32        0x4 c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_c.a(__weak__main.o)
+                0x00000e32                __weak_main
+                0x00000e32                __main
  *(.rodata .rodata.* .constdata .constdata.*)
- *fill*         0x00000cd6        0x2 ff
+ *fill*         0x00000e36        0x2 ff
  .rodata.OscRateIn
-                0x00000cd8        0x4 ./src/sysinit.o
-                0x00000cd8                OscRateIn
+                0x00000e38        0x4 ./src/sysinit.o
+                0x00000e38                OscRateIn
  .rodata.RTCOscRateIn
-                0x00000cdc        0x4 ./src/sysinit.o
-                0x00000cdc                RTCOscRateIn
-                0x00000ce0                . = ALIGN (0x4)
+                0x00000e3c        0x4 ./src/sysinit.o
+                0x00000e3c                RTCOscRateIn
+                0x00000e40                . = ALIGN (0x4)
 
-.glue_7         0x00000ce0        0x0
- .glue_7        0x00000ce0        0x0 linker stubs
+.glue_7         0x00000e40        0x0
+ .glue_7        0x00000e40        0x0 linker stubs
 
-.glue_7t        0x00000ce0        0x0
- .glue_7t       0x00000ce0        0x0 linker stubs
+.glue_7t        0x00000e40        0x0
+ .glue_7t       0x00000e40        0x0 linker stubs
 
-.vfp11_veneer   0x00000ce0        0x0
- .vfp11_veneer  0x00000ce0        0x0 linker stubs
+.vfp11_veneer   0x00000e40        0x0
+ .vfp11_veneer  0x00000e40        0x0 linker stubs
 
-.v4_bx          0x00000ce0        0x0
- .v4_bx         0x00000ce0        0x0 linker stubs
+.v4_bx          0x00000e40        0x0
+ .v4_bx         0x00000e40        0x0 linker stubs
 
-.iplt           0x00000ce0        0x0
- .iplt          0x00000ce0        0x0 ./src/DHT22.o
+.iplt           0x00000e40        0x0
+ .iplt          0x00000e40        0x0 ./src/DHT22.o
 
-.rel.dyn        0x00000ce0        0x0
- .rel.iplt      0x00000ce0        0x0 ./src/DHT22.o
+.rel.dyn        0x00000e40        0x0
+ .rel.iplt      0x00000e40        0x0 ./src/DHT22.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x00000ce0                __exidx_start = .
+                0x00000e40                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x00000ce0                __exidx_end = .
-                0x00000ce0                _etext = .
+                0x00000e40                __exidx_end = .
+                0x00000e40                _etext = .
 
-.data_RAM2      0x2007c000        0x0 load address 0x00000ce0
+.data_RAM2      0x2007c000        0x0 load address 0x00000e40
  FILL mask 0xff
                 [!provide]                PROVIDE (__start_data_RAM2 = .)
  *(.ramfunc.$RAM2)
@@ -766,7 +771,7 @@ END GROUP
                 0x10000000                . = ALIGN (0x4)
                 0x10000000                _end_uninit_RESERVED = .
 
-.data           0x10000000        0x4 load address 0x00000ce0
+.data           0x10000000        0x4 load address 0x00000e40
  FILL mask 0xff
                 0x10000000                _data = .
  *(vtable)
@@ -775,12 +780,12 @@ END GROUP
  *(DataQuickAccess)
  *(RamFunction)
  *(.data*)
- .data.espera.7088
+ .data.espera.7106
                 0x10000000        0x4 ./src/DHT22.o
                 0x10000004                . = ALIGN (0x4)
                 0x10000004                _edata = .
 
-.igot.plt       0x10000004        0x0 load address 0x00000ce4
+.igot.plt       0x10000004        0x0 load address 0x00000e44
  .igot.plt      0x10000004        0x0 ./src/DHT22.o
 
 .bss_RAM2       0x2007c000        0x0
@@ -793,17 +798,20 @@ END GROUP
                 0x2007c000                . = ALIGN ((. != 0x0)?0x4:0x1)
                 [!provide]                PROVIDE (__end_bss_RAM2 = .)
 
-.bss            0x10000004        0x8
+.bss            0x10000004       0x10
                 0x10000004                . = ALIGN (0x4)
                 0x10000004                _bss = .
  *(.bss*)
- .bss.estado.7089
-                0x10000004        0x4 ./src/DHT22.o
+ .bss.data      0x10000004        0x5 ./src/DHT22.o
+                0x10000004                data
+ *fill*         0x10000009        0x3 
+ .bss.estado.7107
+                0x1000000c        0x4 ./src/DHT22.o
  *(COMMON)
- COMMON         0x10000008        0x4 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
-                0x10000008                SystemCoreClock
-                0x1000000c                . = ALIGN (0x4)
-                0x1000000c                _ebss = .
+ COMMON         0x10000010        0x4 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+                0x10000010                SystemCoreClock
+                0x10000014                . = ALIGN (0x4)
+                0x10000014                _ebss = .
                 [!provide]                PROVIDE (end = .)
 
 .noinit_RAM2    0x2007c000        0x0
@@ -814,131 +822,131 @@ END GROUP
  *(.noinit.$RamAHB32.*)
                 0x2007c000                . = ALIGN (0x4)
 
-.noinit         0x1000000c        0x0
-                0x1000000c                . = ALIGN (0x4)
-                0x1000000c                _noinit = .
+.noinit         0x10000014        0x0
+                0x10000014                . = ALIGN (0x4)
+                0x10000014                _noinit = .
  *(.noinit*)
-                0x1000000c                . = ALIGN (0x4)
-                0x1000000c                _end_noinit = .
+                0x10000014                . = ALIGN (0x4)
+                0x10000014                _end_noinit = .
                 [!provide]                PROVIDE (_pvHeapStart = DEFINED (__user_heap_base)?__user_heap_base:.)
                 0x10008000                PROVIDE (_vStackTop = DEFINED (__user_stack_top)?__user_stack_top:(__top_RamLoc32 - 0x0))
                 0xefff74de                PROVIDE (__valid_user_code_checksum = (0x0 - ((((((_vStackTop + (ResetISR + 0x1)) + (NMI_Handler + 0x1)) + (HardFault_Handler + 0x1)) + (DEFINED (MemManage_Handler)?MemManage_Handler:0x0 + 0x1)) + (DEFINED (BusFault_Handler)?BusFault_Handler:0x0 + 0x1)) + (DEFINED (UsageFault_Handler)?UsageFault_Handler:0x0 + 0x1))))
                 0x00000000                _image_start = LOADADDR (.text)
-                0x00000ce4                _image_end = (LOADADDR (.data) + SIZEOF (.data))
-                0x00000ce4                _image_size = (_image_end - _image_start)
+                0x00000e44                _image_end = (LOADADDR (.data) + SIZEOF (.data))
+                0x00000e44                _image_size = (_image_end - _image_start)
 OUTPUT(DHT22.axf elf32-littlearm)
 
-.debug_info     0x00000000     0x2d8f
- .debug_info    0x00000000      0xf58 ./src/DHT22.o
- .debug_info    0x00000f58      0x276 ./src/cr_startup_lpc175x_6x.o
- .debug_info    0x000011ce      0x20f ./src/sysinit.o
- .debug_info    0x000013dd      0x591 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
- .debug_info    0x0000196e      0xc2a E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
- .debug_info    0x00002598      0x347 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
- .debug_info    0x000028df      0x4b0 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+.debug_info     0x00000000     0x2ed5
+ .debug_info    0x00000000     0x109e ./src/DHT22.o
+ .debug_info    0x0000109e      0x276 ./src/cr_startup_lpc175x_6x.o
+ .debug_info    0x00001314      0x20f ./src/sysinit.o
+ .debug_info    0x00001523      0x591 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_info    0x00001ab4      0xc2a E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_info    0x000026de      0x347 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_info    0x00002a25      0x4b0 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
 
-.debug_abbrev   0x00000000      0xd19
- .debug_abbrev  0x00000000      0x336 ./src/DHT22.o
- .debug_abbrev  0x00000336      0x12a ./src/cr_startup_lpc175x_6x.o
- .debug_abbrev  0x00000460       0xeb ./src/sysinit.o
- .debug_abbrev  0x0000054b      0x16d E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
- .debug_abbrev  0x000006b8      0x34d E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
- .debug_abbrev  0x00000a05      0x164 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
- .debug_abbrev  0x00000b69      0x1b0 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+.debug_abbrev   0x00000000      0xd2a
+ .debug_abbrev  0x00000000      0x347 ./src/DHT22.o
+ .debug_abbrev  0x00000347      0x12a ./src/cr_startup_lpc175x_6x.o
+ .debug_abbrev  0x00000471       0xeb ./src/sysinit.o
+ .debug_abbrev  0x0000055c      0x16d E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_abbrev  0x000006c9      0x34d E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_abbrev  0x00000a16      0x164 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_abbrev  0x00000b7a      0x1b0 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
 
-.debug_aranges  0x00000000      0x310
+.debug_aranges  0x00000000      0x320
  .debug_aranges
-                0x00000000       0x88 ./src/DHT22.o
+                0x00000000       0x98 ./src/DHT22.o
  .debug_aranges
-                0x00000088       0x80 ./src/cr_startup_lpc175x_6x.o
+                0x00000098       0x80 ./src/cr_startup_lpc175x_6x.o
  .debug_aranges
-                0x00000108       0x20 ./src/sysinit.o
+                0x00000118       0x20 ./src/sysinit.o
  .debug_aranges
-                0x00000128       0x38 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+                0x00000138       0x38 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
  .debug_aranges
-                0x00000160      0x120 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000170      0x120 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .debug_aranges
-                0x00000280       0x30 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+                0x00000290       0x30 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
  .debug_aranges
-                0x000002b0       0x60 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x000002c0       0x60 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
 
-.debug_ranges   0x00000000      0x2a0
- .debug_ranges  0x00000000       0x78 ./src/DHT22.o
- .debug_ranges  0x00000078       0x70 ./src/cr_startup_lpc175x_6x.o
- .debug_ranges  0x000000e8       0x10 ./src/sysinit.o
- .debug_ranges  0x000000f8       0x28 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
- .debug_ranges  0x00000120      0x110 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
- .debug_ranges  0x00000230       0x20 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
- .debug_ranges  0x00000250       0x50 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+.debug_ranges   0x00000000      0x2b0
+ .debug_ranges  0x00000000       0x88 ./src/DHT22.o
+ .debug_ranges  0x00000088       0x70 ./src/cr_startup_lpc175x_6x.o
+ .debug_ranges  0x000000f8       0x10 ./src/sysinit.o
+ .debug_ranges  0x00000108       0x28 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_ranges  0x00000130      0x110 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_ranges  0x00000240       0x20 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_ranges  0x00000260       0x50 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
 
-.debug_macro    0x00000000     0x4ef1
- .debug_macro   0x00000000      0x1f7 ./src/DHT22.o
- .debug_macro   0x000001f7      0xaa8 ./src/DHT22.o
- .debug_macro   0x00000c9f       0x10 ./src/DHT22.o
- .debug_macro   0x00000caf      0x12e ./src/DHT22.o
- .debug_macro   0x00000ddd      0x5b3 ./src/DHT22.o
- .debug_macro   0x00001390       0x22 ./src/DHT22.o
- .debug_macro   0x000013b2       0x7b ./src/DHT22.o
- .debug_macro   0x0000142d       0x10 ./src/DHT22.o
- .debug_macro   0x0000143d       0x2d ./src/DHT22.o
- .debug_macro   0x0000146a       0x3a ./src/DHT22.o
- .debug_macro   0x000014a4       0x2d ./src/DHT22.o
- .debug_macro   0x000014d1      0xbb1 ./src/DHT22.o
- .debug_macro   0x00002082      0x22c ./src/DHT22.o
- .debug_macro   0x000022ae       0x42 ./src/DHT22.o
- .debug_macro   0x000022f0       0x52 ./src/DHT22.o
- .debug_macro   0x00002342       0x78 ./src/DHT22.o
- .debug_macro   0x000023ba       0x82 ./src/DHT22.o
- .debug_macro   0x0000243c      0x48c ./src/DHT22.o
- .debug_macro   0x000028c8       0x34 ./src/DHT22.o
- .debug_macro   0x000028fc      0x4c5 ./src/DHT22.o
- .debug_macro   0x00002dc1      0x1b7 ./src/DHT22.o
- .debug_macro   0x00002f78       0x10 ./src/DHT22.o
- .debug_macro   0x00002f88      0x21b ./src/DHT22.o
- .debug_macro   0x000031a3      0x1b9 ./src/DHT22.o
- .debug_macro   0x0000335c       0x40 ./src/DHT22.o
- .debug_macro   0x0000339c       0x22 ./src/DHT22.o
- .debug_macro   0x000033be      0x162 ./src/DHT22.o
- .debug_macro   0x00003520       0x94 ./src/DHT22.o
- .debug_macro   0x000035b4       0xb8 ./src/DHT22.o
- .debug_macro   0x0000366c       0x4c ./src/DHT22.o
- .debug_macro   0x000036b8       0x16 ./src/DHT22.o
- .debug_macro   0x000036ce      0x328 ./src/DHT22.o
- .debug_macro   0x000039f6       0x49 ./src/DHT22.o
- .debug_macro   0x00003a3f       0x16 ./src/DHT22.o
- .debug_macro   0x00003a55       0xca ./src/DHT22.o
- .debug_macro   0x00003b1f       0x18 ./src/DHT22.o
- .debug_macro   0x00003b37       0x1d ./src/cr_startup_lpc175x_6x.o
- .debug_macro   0x00003b54      0x1cd ./src/sysinit.o
- .debug_macro   0x00003d21      0x1cd E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
- .debug_macro   0x00003eee      0xa9c E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
- .debug_macro   0x0000498a      0x1cd E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
- .debug_macro   0x00004b57      0x1cd E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
- .debug_macro   0x00004d24      0x1cd E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+.debug_macro    0x00000000     0x4f03
+ .debug_macro   0x00000000      0x209 ./src/DHT22.o
+ .debug_macro   0x00000209      0xaa8 ./src/DHT22.o
+ .debug_macro   0x00000cb1       0x10 ./src/DHT22.o
+ .debug_macro   0x00000cc1      0x12e ./src/DHT22.o
+ .debug_macro   0x00000def      0x5b3 ./src/DHT22.o
+ .debug_macro   0x000013a2       0x22 ./src/DHT22.o
+ .debug_macro   0x000013c4       0x7b ./src/DHT22.o
+ .debug_macro   0x0000143f       0x10 ./src/DHT22.o
+ .debug_macro   0x0000144f       0x2d ./src/DHT22.o
+ .debug_macro   0x0000147c       0x3a ./src/DHT22.o
+ .debug_macro   0x000014b6       0x2d ./src/DHT22.o
+ .debug_macro   0x000014e3      0xbb1 ./src/DHT22.o
+ .debug_macro   0x00002094      0x22c ./src/DHT22.o
+ .debug_macro   0x000022c0       0x42 ./src/DHT22.o
+ .debug_macro   0x00002302       0x52 ./src/DHT22.o
+ .debug_macro   0x00002354       0x78 ./src/DHT22.o
+ .debug_macro   0x000023cc       0x82 ./src/DHT22.o
+ .debug_macro   0x0000244e      0x48c ./src/DHT22.o
+ .debug_macro   0x000028da       0x34 ./src/DHT22.o
+ .debug_macro   0x0000290e      0x4c5 ./src/DHT22.o
+ .debug_macro   0x00002dd3      0x1b7 ./src/DHT22.o
+ .debug_macro   0x00002f8a       0x10 ./src/DHT22.o
+ .debug_macro   0x00002f9a      0x21b ./src/DHT22.o
+ .debug_macro   0x000031b5      0x1b9 ./src/DHT22.o
+ .debug_macro   0x0000336e       0x40 ./src/DHT22.o
+ .debug_macro   0x000033ae       0x22 ./src/DHT22.o
+ .debug_macro   0x000033d0      0x162 ./src/DHT22.o
+ .debug_macro   0x00003532       0x94 ./src/DHT22.o
+ .debug_macro   0x000035c6       0xb8 ./src/DHT22.o
+ .debug_macro   0x0000367e       0x4c ./src/DHT22.o
+ .debug_macro   0x000036ca       0x16 ./src/DHT22.o
+ .debug_macro   0x000036e0      0x328 ./src/DHT22.o
+ .debug_macro   0x00003a08       0x49 ./src/DHT22.o
+ .debug_macro   0x00003a51       0x16 ./src/DHT22.o
+ .debug_macro   0x00003a67       0xca ./src/DHT22.o
+ .debug_macro   0x00003b31       0x18 ./src/DHT22.o
+ .debug_macro   0x00003b49       0x1d ./src/cr_startup_lpc175x_6x.o
+ .debug_macro   0x00003b66      0x1cd ./src/sysinit.o
+ .debug_macro   0x00003d33      0x1cd E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x00003f00      0xa9c E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x0000499c      0x1cd E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00004b69      0x1cd E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00004d36      0x1cd E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
 
-.debug_line     0x00000000     0x2686
- .debug_line    0x00000000      0x781 ./src/DHT22.o
- .debug_line    0x00000781      0x160 ./src/cr_startup_lpc175x_6x.o
- .debug_line    0x000008e1      0x465 ./src/sysinit.o
- .debug_line    0x00000d46      0x4f9 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
- .debug_line    0x0000123f      0x960 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
- .debug_line    0x00001b9f      0x515 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
- .debug_line    0x000020b4      0x5d2 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+.debug_line     0x00000000     0x27a3
+ .debug_line    0x00000000      0x89e ./src/DHT22.o
+ .debug_line    0x0000089e      0x160 ./src/cr_startup_lpc175x_6x.o
+ .debug_line    0x000009fe      0x465 ./src/sysinit.o
+ .debug_line    0x00000e63      0x4f9 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_line    0x0000135c      0x960 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_line    0x00001cbc      0x515 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_line    0x000021d1      0x5d2 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
 
-.debug_str      0x00000000    0x125a4
- .debug_str     0x00000000    0x116f8 ./src/DHT22.o
-                              0x117fb (size before relaxing)
- .debug_str     0x000116f8      0x1c6 ./src/cr_startup_lpc175x_6x.o
+.debug_str      0x00000000    0x125f8
+ .debug_str     0x00000000    0x118ee ./src/DHT22.o
+                              0x119f1 (size before relaxing)
+ .debug_str     0x000118ee      0x1c6 ./src/cr_startup_lpc175x_6x.o
                                0x2f86 (size before relaxing)
- .debug_str     0x000118be      0x1bd ./src/sysinit.o
+ .debug_str     0x00011ab4       0x1b ./src/sysinit.o
                               0x10fa8 (size before relaxing)
- .debug_str     0x00011a7b      0x171 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_str     0x00011acf      0x171 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
                               0x113b1 (size before relaxing)
- .debug_str     0x00011bec      0x857 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_str     0x00011c40      0x857 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
                               0x11a2f (size before relaxing)
- .debug_str     0x00012443       0x9d E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_str     0x00012497       0x9d E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
                               0x10eac (size before relaxing)
- .debug_str     0x000124e0       0xc4 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_str     0x00012534       0xc4 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
                               0x11094 (size before relaxing)
 
 .comment        0x00000000       0x75
@@ -971,14 +979,14 @@ OUTPUT(DHT22.axf elf32-littlearm)
  .ARM.attributes
                 0x0000013b       0x2d c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_c.a(__weak__main.o)
 
-.debug_frame    0x00000000      0xa88
- .debug_frame   0x00000000      0x220 ./src/DHT22.o
- .debug_frame   0x00000220      0x170 ./src/cr_startup_lpc175x_6x.o
- .debug_frame   0x00000390       0x34 ./src/sysinit.o
- .debug_frame   0x000003c4       0x88 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
- .debug_frame   0x0000044c      0x490 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
- .debug_frame   0x000008dc       0x80 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
- .debug_frame   0x0000095c      0x12c E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+.debug_frame    0x00000000      0xad0
+ .debug_frame   0x00000000      0x268 ./src/DHT22.o
+ .debug_frame   0x00000268      0x170 ./src/cr_startup_lpc175x_6x.o
+ .debug_frame   0x000003d8       0x34 ./src/sysinit.o
+ .debug_frame   0x0000040c       0x88 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_frame   0x00000494      0x490 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_frame   0x00000924       0x80 E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_frame   0x000009a4      0x12c E:\TD2\Wspace18-9-19\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
 
 Cross Reference Table
 
@@ -1092,8 +1100,10 @@ __valid_user_code_checksum                        ./src/cr_startup_lpc175x_6x.o
 __weak_main                                       c:/nxp/mcuxpressoide_11.0.1_2563/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.1.201907311258/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_c.a(__weak__main.o)
 _vStackTop                                        ./src/cr_startup_lpc175x_6x.o
 bss_init                                          ./src/cr_startup_lpc175x_6x.o
+data                                              ./src/DHT22.o
 data_init                                         ./src/cr_startup_lpc175x_6x.o
-expectPulse                                       ./src/DHT22.o
+expectPulseOne                                    ./src/DHT22.o
+expectPulseZero                                   ./src/DHT22.o
 g_pfnVectors                                      ./src/cr_startup_lpc175x_6x.o
                                                   ./src/sysinit.o
 main                                              ./src/DHT22.o
