@@ -12,6 +12,7 @@
 #define TIMELIMIT 10000
 
 uint8_t data[5];
+bool lastresult = 0;
 
 /****************************************************************************************
  * Function Name : void DemorauS(uint32_t);
@@ -37,22 +38,7 @@ void DemorauS(uint32_t micros){
  * Output :
  * Void Note :
 ****************************************************************************************/
-uint32_t expectPulseOne(uint32_t estado){
-	uint32_t time;
-	DWT->CYCCNT=0;
-	if(estado){
-		while( (!Chip_GPIO_GetPinState(LPC_GPIO, DHT22_PORT, DHT22_PIN)) && ((int)((DWT->CYCCNT)/100) < TIMELIMIT));
-	}else{
-		while( (Chip_GPIO_GetPinState(LPC_GPIO, DHT22_PORT, DHT22_PIN)) && ((int)((DWT->CYCCNT)/100) < TIMELIMIT));
-	}
-	time = (int)((DWT->CYCCNT)/100);
-	if(time >= TIMELIMIT){
-		return TIMEOUT;
-	}else{
-		return time;
-	}
-}
-uint32_t expectPulseZero(uint32_t estado){
+uint32_t expectPulse(uint32_t estado){
 	uint32_t time;
 	DWT->CYCCNT=0;
 	if(estado){
@@ -83,7 +69,6 @@ void DHT22_update(void)
     //Esta función no puede llamarse más de una vez cada 2 segundos, colocar dentro del TDS y listo
     // Reset 40 bits of received data to zero.
     uint32_t cycles[80];
-    bool lastresult = 0;
     uint32_t lowCycles = 0;
     uint32_t highCycles = 0;
     uint8_t i;
@@ -100,6 +85,7 @@ void DHT22_update(void)
 	{
 		estado--;
 		Chip_GPIO_SetPinDIROutput(LPC_GPIO, DHT22_PORT, DHT22_PIN);
+		Chip_GPIO_SetPinToggle(LPC_GPIO,LED_PORT,LED_PIN);
 
 		for (i = 0; i < 5; i++) {
 			data[i] = 0;
@@ -132,11 +118,11 @@ void DHT22_update(void)
 
 		// First expect a low signal for ~80 microseconds followed by a high signal
 		// for ~80 microseconds again.
-		if (expectPulseZero(0) == TIMEOUT) {
+		if (expectPulse(0) == TIMEOUT) {
 			//DEBUG_PRINTLN(F("DHT timeout waiting for start signal low pulse."));
 			lastresult = false;
 		}
-		if (expectPulseOne(1) == TIMEOUT) {
+		if (expectPulse(1) == TIMEOUT) {
 			//DEBUG_PRINTLN(F("DHT timeout waiting for start signal high pulse."));
 			lastresult = false;
 		}
@@ -151,8 +137,8 @@ void DHT22_update(void)
 		// all the pulses are read into a array and then examined in a later step.
 
 		 for (i = 0; i < 81; i += 2) {
-			cycles[i] = expectPulseZero(0);
-			cycles[i + 1] = expectPulseOne(1);
+			cycles[i] = expectPulse(0);
+			cycles[i + 1] = expectPulse(1);
 		}
 		// Timing critical code is now complete.
 
@@ -175,19 +161,6 @@ void DHT22_update(void)
 			// stored data.
 		}
 
-		//   DEBUG_PRINTLN(F("Received from DHT:"));
-		//   DEBUG_PRINT(data[0], HEX);
-		//   DEBUG_PRINT(F(", "));
-		//   DEBUG_PRINT(data[1], HEX);
-		//   DEBUG_PRINT(F(", "));
-		//   DEBUG_PRINT(data[2], HEX);
-		//   DEBUG_PRINT(F(", "));
-		//   DEBUG_PRINT(data[3], HEX);
-		//   DEBUG_PRINT(F(", "));
-		//   DEBUG_PRINT(data[4], HEX);
-		//   DEBUG_PRINT(F(" =? "));
-		//   DEBUG_PRINTLN((data[0] + data[1] + data[2] + data[3]) & 0xFF, HEX);
-
 		// Check we read 40 bits and that the checksum matches.
 		if (data[4] == ((data[0] + data[1] + data[2] + data[3]) & 0xFF)) {
 			lastresult = true;
@@ -197,8 +170,44 @@ void DHT22_update(void)
 		}
 	}
 }
+/*!
+ *  @brief  Read Humidity
+ *  @param  force
+ *					force read mode
+ *	@return float value - humidity in percent
+ */
+float readHumidity(void) {
+  float f = 0;
+  if(lastresult){
+	  f = ((uint8_t)data[0]) << 8 | data[1];
+	  f *= 0.1;
+	  return f;
+  }else{
+	  return 0;
+  }
+}
+/*!
+ *  @brief  Read temperature - Celcius
+ *  @param  force
+ *          true if in force mode
+ *	@return Temperature value in selected scale
+ */
+float readTemperature(void){
+  float f = 0;
+  if(lastresult){
+	  f = ((uint8_t)(data[2] & 0x7F)) << 8 | data[3];
+	  f *= 0.1;
+
+	  if (data[2] & 0x80) f *= -1;
+	  return f;
+  }else{
+	  return 0;
+  }
+}
 
 int main(void) {
+	float humedad = 0;
+	float temp = 0;
 
 	Chip_SetupXtalClocking();
 	Chip_SYSCTL_SetFLASHAccess(FLASHTIM_100MHZ_CPU);
@@ -211,11 +220,8 @@ int main(void) {
 	Chip_IOCON_PinMuxSet(LPC_IOCON, DHT22_PORT, DHT22_PIN, IOCON_FUNC0);
 	Chip_GPIO_SetPinDIRInput(LPC_GPIO, DHT22_PORT, DHT22_PIN);
 
+	Chip_IOCON_PinMuxSet(LPC_IOCON, LED_PORT, LED_PIN, IOCON_FUNC0);
 	Chip_GPIO_SetPinDIROutput(LPC_GPIO, LED_PORT, LED_PIN);
-	Chip_GPIO_SetPinOutHigh(LPC_GPIO, LED_PORT, LED_PIN);
-
-	Chip_GPIO_SetPinDIROutput(LPC_GPIO, TIME_PORT, TIME_PIN);
-	Chip_GPIO_SetPinOutHigh(LPC_GPIO, TIME_PORT, TIME_PIN);
 
 
 	/*Inicializa Systick*/
@@ -225,6 +231,11 @@ int main(void) {
 	while(1)
 	{
 		DHT22_update();
+		if(lastresult){
+			humedad = readHumidity();
+			temp = readTemperature();
+			humedad = 1;
+		}
 		__WFI();
     }
     return 0 ;
